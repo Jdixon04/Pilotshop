@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: #272C31;
+	padding: 10px;
+	color: #ffffff;
+}
+.nav2-links{
+	display: flex;
+	justify-content: center;
+	background-color: #272C31;
+	padding: 10px;
+	color: #ffffff;
+}
+
+nav a {
+	color: #ffffff;
+	text-decoration: none;
+	margin-left: 20px;
+}
