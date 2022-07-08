@@ -44,16 +44,28 @@ main {
 	background-image:url('https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/slide1_image.jpg?v=92401627442472956191484148034');
 	background-size: cover;
 	background-repeat:no-repeat;
-	
+	height:500px;
 }
 
 .middle-boxes {
 	display: flex;
-	justify-content: space-between;
-	align-content: center; 
-	border: 2px solid black;
+	justify-content: center;
+	align-items: center; 
+	position: relative;
+	z-index: 2;
+	top:-80px;
+}
+
+.overlap-boxes {
+	border: 1px solid #ffffff;
 	  outline-style: outset;
 	  outline-color: black;
+		width: 200px;	
+		height: 200px;
+		margin-left: 20px;
+		color:#ffffff;
+		background-color: #19B3FA;
+		font-size:25px;
 }
 
 header {
@@ -62,9 +74,11 @@ header {
 	flex-wrap:wrap;
 	justify-content: center;
 	align-items:column;
+	flex-direction:column;
 	width:300px;
 	height:300px;
 	color:#ffffff;
+	
 }
 
 .central-content {
