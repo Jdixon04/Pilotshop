@@ -14,24 +14,47 @@ main {
 
 .nav1 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-content: center; 
 	background-color: #f8f8f8;
 	padding: 10px;
 	color: #b7b7b8;
+	flex-direction: row;
+	;
 }
 
 .nav2 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-content: center; 
-	background-color: #333;
+	flex-direction: row;
+	flex-wrap:wrap;
+	background-color: #ffffff;
 	padding: 10px;
 	color: #ffffff;
 }
 
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	align-content: center; 
+	flex-direction: row;
+	flex-wrap:wrap;
+	padding: 0px;
+}
 
+.featured-product {
+	display: flex;
+	justify-content: space-around;
+	align-content: center; 
+	flex-direction: column;
+	flex-wrap:wrap;
+	margin-top:-40px;
+}
 
+.item-description {
+	margin: 0;
+}
 
 
 .center-main {
@@ -57,8 +80,7 @@ main {
 }
 
 .overlap-boxes {
-	border: 1px solid #ffffff;
-	  outline-style: outset;
+
 	  outline-color: black;
 		width: 200px;	
 		height: 200px;
@@ -69,8 +91,23 @@ main {
 }
 
 .items{
-	
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	margin:0px;
+	background-color: #D4F8FA;
 }
+
+.individual-item {
+	display: flex;
+	align-items: column;
+	flex-wrap:wrap;
+	flex-direction:column;
+	justify-content: center;
+	text-align:center;
+	margin:5px;
+}
+
 
 header {
 	
@@ -94,5 +131,5 @@ header {
 nav a {
 	color: #b7b7b8;
 	text-decoration: none;
-	margin-left: 50px;
+	margin-left: 40px;
 }
