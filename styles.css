@@ -43,6 +43,25 @@ main {
 	padding: 0px;
 }
 
+.nav-links2{
+	display: flex;
+	justify-content: space-around;
+	align-content: center; 
+	flex-direction: row;
+	flex-wrap:wrap;
+	padding: 0px;
+}
+
+.nav1-hidden {
+	display: flex;
+	justify-content: space-around;
+	align-content: center; 
+	flex-direction: row;
+	flex-wrap:wrap;
+	padding: 0px;
+	display:none;
+}
+
 .featured-product {
 	display: flex;
 	justify-content: space-around;
@@ -96,6 +115,7 @@ main {
 	justify-content: center;
 	margin:0px;
 	background-color: #D4F8FA;
+	width:100%;
 }
 
 .individual-item {
@@ -122,6 +142,12 @@ header {
 	
 }
 
+.shop-now-button {
+	
+	border-color: #fff;
+	border: 2px solid;
+}
+
 .central-content {
 	text-align: center;
 	display: flex;
@@ -131,5 +157,69 @@ header {
 nav a {
 	color: #b7b7b8;
 	text-decoration: none;
-	margin-left: 40px;
+	margin-left: 30px;
 }
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+	display:none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+@media screen and (max-width: 700px) {
+	.dropdown{
+	position: relative;
+  display: inline-block;
+	
+	}
+  .nav-links2 {   
+    display:none
+	}
+	
+	.nav1 {
+		display:none;
+	}
+	.nav1-hidden{
+		display: flex;
+	}
+}
+
+
+
+
